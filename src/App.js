@@ -4,9 +4,11 @@ import { DrumMachine } from "./components/DrumMachine";
 
 function App() {
   return (
-    <SoundsContext.Provider value={sounds}>
-      <DrumMachine />
-    </SoundsContext.Provider>
+    <div className={"container-app"}>
+      <SoundsContext.Provider value={sounds}>
+        <DrumMachine />
+      </SoundsContext.Provider>
+    </div>
   );
 }
 

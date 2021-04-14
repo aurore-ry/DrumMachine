@@ -3,15 +3,15 @@ import { createContext } from "react";
 export const sounds = {
   byKeyCode: {
     //  Q, W, E, A, S, D, Z, X, C.
-    65: { letter: "A", source: "65-A.wav", order: 4 },
-    67: { letter: "C", source: "67-C.wav", order: 9 },
-    68: { letter: "D", source: "68-D.wav", order: 6 },
-    69: { letter: "E", source: "69-E.wav", order: 3 },
-    81: { letter: "Q", source: "81-Q.wav", order: 1 },
-    83: { letter: "S", source: "83-S.wav", order: 5 },
-    87: { letter: "W", source: "hhhh.mp3", order: 2 },
-    88: { letter: "X", source: "hhhh.mp3", order: 8 },
-    90: { letter: "Z", source: "hhhh.mp3", order: 7 },
+    65: { order: 4, letter: "A", name: "Instr. 1", color: "#65e1fc" },
+    67: { order: 9, letter: "C", name: "Instr. 2", color: "#ff33c5" },
+    68: { order: 6, letter: "D", name: "Instr. 3", color: "#00fc37" },
+    69: { order: 3, letter: "E", name: "Instr. 4", color: "#9cfc00" },
+    81: { order: 1, letter: "Q", name: "Instr. 5", color: "#eaff00" },
+    83: { order: 5, letter: "S", name: "Instr. 6", color: "#2ee500" },
+    87: { order: 2, letter: "W", name: "Instr. 7", color: "#30f" },
+    88: { order: 8, letter: "X", name: "Instr. 8", color: "#bc03ff" },
+    90: { order: 7, letter: "Z", name: "Instr. 9", color: "#ff2f00" },
   },
 };
 

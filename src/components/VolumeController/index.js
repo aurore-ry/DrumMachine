@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -8,13 +8,16 @@ import VolumeUp from "@material-ui/icons/VolumeUp";
 
 const useStyles = makeStyles({
   root: {
-    width: 200,
+    width: 400,
+    justifyContent: "center",
+    alignItems: "center",
+    color: "white",
   },
 });
 
 export const VolumeController = () => {
   const classes = useStyles();
-  const [value, setValue] = React.useState(30);
+  const [value, setValue] = useState();
 
   const handleChange = (newValue) => {
     setValue(newValue);
@@ -22,9 +25,6 @@ export const VolumeController = () => {
 
   return (
     <div className={classes.root}>
-      <Typography id="continuous-slider" gutterBottom>
-        Volume
-      </Typography>
       <Grid container spacing={2}>
         <Grid item>
           <VolumeDown />

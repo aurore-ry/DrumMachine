@@ -1,0 +1,39 @@
+$active-color: rgba(255, 0, 0, 1);
+$idle-color: rgb(95, 95, 95);
+
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: calc(33% - 8px);
+  height: calc(33% - 8px);
+  background-color: $idle-color;
+  color: white;
+}
+
+.drum-pad.active {
+  background-color: $active-color;
+  transition: 12ms;
+  animation-duration: 1000ms;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+  // b:order: 12px solid $active-color;
+}
+
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+    background-color: $idle-color;
+  }
+  100% {
+    opacity: 1;
+  }
+}

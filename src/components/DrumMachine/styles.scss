@@ -1,0 +1,36 @@
+#device {
+  background-color: #2b2d2e;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+#drum-machine {
+  background-color: #2b2d2e;
+  border-radius: 8px;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  margin-bottom: 16px;
+
+  background-color: #212124;
+  font-weight: bolder;
+  color: #cae8e8;
+  font-size: 24px;
+}
+
+#volume {
+  margin: 16px 0;
+  background-color: #212124;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.container {
+  border-radius: 12px;
+  border: 0.1px solid rgb(168, 233, 247);
+  border-top: none;
+}
